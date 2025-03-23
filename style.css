@@ -1,0 +1,365 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+body {
+    background: linear-gradient(135deg, #8B0000, #1E90FF);
+
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1E3C72, #2A5298);
+
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+header .logo:hover {
+    color: #ff9800;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 10%;
+    background: #f4f4f9;
+    color: #333;
+}
+
+/* Home Section */
+#home {
+    background: url('assets/home-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h2 {
+    font-size: 45px;
+    line-height: 1.4;
+}
+
+.home-content img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5%;
+    margin: 20px 0;
+    transition: transform 0.3s;
+}
+
+.home-content img:hover {
+    transform: scale(1.1);
+}
+
+#linked img {
+    height: 57px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links a img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+/* About Section */
+#about {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.about-content img:hover {
+    transform: scale(1.05);
+}
+
+.about-content p {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+#skills {
+    background: #ffffff;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-card {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-align: center;
+    width: 220px;
+    padding: 20px;
+}
+
+.skill-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Internships Section */
+#intern {
+    background: #f0f0f0;
+    text-align: center;
+}
+
+.intern-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.intern-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 45%;
+    padding: 20px;
+    text-align: center;
+}
+
+.intern-card img {
+    width: 100%;
+    max-width: 400px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.intern-card:hover {
+    transform: scale(1.05);
+}
+
+/* Education Section */
+#education {
+    background: #ffffff;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.edu-card {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.edu-card:hover {
+    transform: translateY(-10px);
+}
+
+.edu-card img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Certification Section */
+#Certification {
+    background: #f4f4f9;
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.certification-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Card container */
+.cert-card {
+    background: linear-gradient(135deg, #ff416c, #2b5876);  /* Red to Blue gradient */
+    color: #fff;  /* White text for readability */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px 40px;  
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* Shadow effect */
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.cert-card:hover {
+    transform: translateY(-10px);  
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #2b5876, #ff416c); /* Reverse gradient */
+}
+
+/* Active effect */
+.cert-card:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-center p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer-links a {
+    color: #4caf50;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffeb3b;
+}
+
+.footer-content img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.footer-content a:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skills-container, .intern-container, .education-container, .certification-container {
+        flex-direction: column;
+    }
+
+    .intern-card, .edu-card, .cert-card {
+        width: 90%;
+    }
+}
